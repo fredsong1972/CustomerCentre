@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>List of Customers</h1>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<p>
+    <a asp-action="List5Oldest">5 Oldest Customers</a>
+</p>
+@await Html.PartialAsync("~/Views/Shared/CustomerListView.cshtml")
+
